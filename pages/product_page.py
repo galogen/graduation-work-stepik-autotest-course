@@ -2,10 +2,6 @@ from pages.base_page import BasePage
 from pages.locators import ProductPageLocators
 
 class ProductPage(BasePage):
-    def go_to_login_page(self):
-        product_link = self.browser.find_element(*ProductPageLocators.PRODUCT_LINK)
-        product_link.click()
-
     def go_to_basket_page(self):
         basket_page = self.browser.find_element(*ProductPageLocators.BASKET_LINK)
         basket_page.click()
